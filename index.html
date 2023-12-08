@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gendergerechte Sprache</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript-Code im <head>-Bereich -->
+    <script>
+        function setMenuAlignment() {
+            const language = navigator.language || navigator.userLanguage; //gibt bevorzugte Sprache des Nutzers zurück
+            const menu = document.querySelector('.menu'); // Menüleiste auswählen, HTML Klasse Menü (wenn sie so heißt) wird ausgewählt
+
+            // Prüfen Sie, ob die erkannte Schriftkultur von rechts nach links (RTL) ist
+            if (language.toLowerCase().startsWith('ar') || language.toLowerCase().startsWith('he')) { //überprüft, ob die erkannte Schriftkultur mit 'ar' (Arabisch) oder 'he' (Hebräisch) beginnt, und das nicht case sensitive
+                menu.classList.remove('menu-left'); // Entfernen Sie die linke Ausrichtung
+                menu.classList.add('menu-right');    // Fügen Sie die rechte Ausrichtung hinzu
+            } else {
+                menu.classList.remove('menu-right'); // Entfernen Sie die rechte Ausrichtung
+                menu.classList.add('menu-left');      // Fügen Sie die linke Ausrichtung hinzu (Standard)
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', setMenuAlignment); //wartet, bis Dokument vollständig geladen, um Ausrichtung Menü zu setzen
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo_fertig.jpg" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Willkommen auf unserer Webseite</h1>
+        </div>
+        <nav class="global-navigation">
+            <!-- Hier können Sie Ihr Menü mit Links erstellen -->
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="beispiel.html">Beispiele</a></li>
+                <li><a href="wandler.html">Textwandler</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="menu menu-left">
+            <!-- Menü-Links hier -->
+        </nav>
+        
+    </header>
+
+    <!-- Content-Bereich -->
+    <main>
+        <aside class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Technische Begriffe</a></li>
+                    <li><a href="#">Schulungen</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="content">
+            <!-- Hier können Sie den Inhalt Ihrer Webseite platzieren -->
+            <h2>Willkommen beim Gendermat.</h2>
+            <p>"Sprache formt das Denken und Denken formt die Sprache." - Benjamin Lee Whorf (Zugeschrieben)</p>
+            <p>Schon immer hat die Sprache einen sehr wichtigen Teil in unserem Leben ausgemacht.</p>
+            <p>Selbst Benjamin Lee Whorf war schon bewusst, dass die Struktur der Sprache das Denken beeinflusst.</p>
+            <p>Dies und unter anderem die feministische und die LGBTQ+ Bewegung, führten dazu, dass wir nun mehr Augenmerk auf die gendergerechte Sprache legen.</p>
+            <p></p>
+            <p>Jedoch ist sich nicht jeder Mensch bewusst, wie gendergerechte Sprache zu formulieren ist.</p>
+            <p></p>
+            <p>Um dieses Problem anzugehen, finden Sie auf dieser Webseite Hilfestellung unterschiedlicher Art zur korrekten Sprache.</p>
+            <p></p>
+            <p>Hier finden Sie einige fiktive Anleitungen, die gendergerecht transformiert werden.</p>
+            <p></p>
+            <p>Sie haben eigene Texte, die umgewandelt werden sollen? Dann schauen Sie doch mal zu unserem Textwandler.</p>
+            <p></p>
+            <p>Hier finden Sie nun einige ausgewählte Beispiele der gendergerechten Formulierung:</p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Ihre Firma</p>
+        <div class="legal-info">
+            <ul>
+                <li><a href="imprint.html">Impressum</a></li>
+                <li><a href="privacy.html">Datenschutzerklärung</a></li>
+                <li><a href="agb.html">AGB</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>

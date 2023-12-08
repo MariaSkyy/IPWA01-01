@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gendergerechte Sprache</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="meinSkript.js"></script>
+
+    <!-- JavaScript-Code im <head>-Bereich -->
+    <script>
+        function setMenuAlignment() {
+            const language = navigator.language || navigator.userLanguage; //gibt bevorzugte Sprache des Nutzers zurück
+            const menu = document.querySelector('.menu'); // Menüleiste auswählen, HTML Klasse Menü (wenn sie so heißt) wird ausgewählt
+
+            // Prüfen Sie, ob die erkannte Schriftkultur von rechts nach links (RTL) ist
+            if (language.toLowerCase().startsWith('ar') || language.toLowerCase().startsWith('he')) { //überprüft, ob die erkannte Schriftkultur mit 'ar' (Arabisch) oder 'he' (Hebräisch) beginnt, und das nicht case sensitive
+                menu.classList.remove('menu-left'); // Entfernen Sie die linke Ausrichtung
+                menu.classList.add('menu-right');    // Fügen Sie die rechte Ausrichtung hinzu
+            } else {
+                menu.classList.remove('menu-right'); // Entfernen Sie die rechte Ausrichtung
+                menu.classList.add('menu-left');      // Fügen Sie die linke Ausrichtung hinzu (Standard)
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', setMenuAlignment); //wartet, bis Dokument vollständig geladen, um Ausrichtung Menü zu setzen
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Willkommen auf unserer Webseite</h1>
+        </div>
+        <nav class="global-navigation">
+            <!-- Hier können Sie Ihr Menü mit Links erstellen -->
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="beispiel.html">Beispiele</a></li>
+                <li><a href="wandler.html">Textwandler</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="menu menu-left">
+            <!-- Menü-Links hier -->
+        </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <h2>Hier können Sie ihre eigenen Texte umwandeln lassen.</h2>
+            <p>Alles, was Sie dafür tun müssen, ist das Textfeld zu befüllen und den Button zu betätigen!</p>
+        
+
+            <div class="Container" id="containerWandler">
+                <div class="left-section">
+                    <label for="inputTextFrei">Text zum Gendern:</label>
+                    <textarea id="inputTextFrei" rows="4" cols="50"></textarea>
+                    <button onclick="genderAndDisplay('inputTextFrei','displayTextFrei', true)">Text überprüfen und ändern</button>
+                </div>
+                <div class="right-section">
+                    <!-- Header -->
+                    <!-- Header --// <label for="displayTextFrei">Geänderter Text:</label>
+                    // <div id="displayTextFrei"></div> -->
+                    <p id="displayTextFrei">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Ihre Firma</p>
+        <div class="legal-info">
+            <ul>
+                <li><a href="imprint.html">Impressum</a></li>
+                <li><a href="privacy.html">Datenschutzerklärung</a></li>
+                <li><a href="agb.html">AGB</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

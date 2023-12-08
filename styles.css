@@ -1,0 +1,232 @@
+/* Reset für das gesamte Dokument */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stil für die linke Ausrichtung des Menüs (LTR, Left-to-Right) */
+.menu-left {
+    text-align: left;
+}
+
+/* Stil für die rechte Ausrichtung des Menüs (RTL, Right-to-Left) */
+.menu-right {
+    text-align: right;
+}
+
+/* Globale Stildefinitionen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px; /* Neues hinzugefügtes Attribut */
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none; /* Verhindert das Vergrößern/Verkleinern des Textfelds durch den Benutzer */
+}
+
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#displayText {
+    display: none;
+}
+
+/* Header-Stile */
+header {
+    display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren */
+    align-items: center; /* Zentrieren Sie die Elemente vertikal */
+    justify-content: space-between; /* Verteilen Sie den verfügbaren Platz zwischen den Elementen */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Innenabstand oben und unten, links und rechts */
+}
+
+/* Logo-Stile */
+.logo img {
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.global-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.global-navigation li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.global-navigation a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Content-Bereich */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Titel-Stile */
+.title h1 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+/* Seitenleisten-Stildefinitionen */
+aside {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.local-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.local-navigation li {
+    margin-bottom: 10px;
+}
+
+.local-navigation a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    justify-content: space-between; /* Text links, Links in der Mitte */
+    align-items: center; /* Vertikal zentrieren */
+    padding: 20px 0; /* Abstand oben und unten im Footer */
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren */
+}
+
+/* Stildefinitionen für die Texte */
+.text {
+    margin-bottom: 20px;
+}
+
+/* Stile für den Container der rechtlichen Informationen */
+.legal-info {
+    margin-bottom: 20px; /* Abstand zwischen den rechtlichen Links und den anderen Footer-Elementen */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.legal-info ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Links in der Mitte */
+}
+
+.legal-info li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.legal-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Rest deiner Stile für den Footer */
+
+
+/* Media Query für Bildschirmbreiten bis 767px */
+@media (max-width: 767px) {
+    .global-navigation li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .local-navigation li {
+        margin-bottom: 5px;
+    }
+
+    body {
+        font-size: 16px; /* Beispielgröße für kleinere Bildschirme */
+    }
+}
+
+/* Media Query für Bildschirmbreiten von 768px bis 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .global-navigation li {
+        margin-right: 10px;
+    }
+}
+
+/* Media Query für Bildschirmbreiten ab 1024px */
+@media (min-width: 1024px) {
+    /* Hier könnten zusätzliche Anpassungen für größere Bildschirme gemacht werden */
+}
