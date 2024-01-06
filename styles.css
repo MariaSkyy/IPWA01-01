@@ -10,6 +10,112 @@
     padding: 0;
 }
 
+/* Füge die Navbar-Klasse vor deinen benutzerdefinierten Stilen hinzu */
+/*
+.navbar.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar.navbar-custom .welcome-text {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.navbar.navbar-custom .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar.navbar-custom .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.navbar.navbar-custom .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar.navbar-custom .navbar-brand {
+    padding: 0;
+    margin-right: 20px;
+}
+
+.navbar.navbar-custom .navbar-nav .nav-item {
+    margin-right: 10px;
+    list-style: none;
+}
+
+.navbar.navbar-custom .navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+*/
+
+/* ... Weitere Stile ... 
+
+.navbar-custom {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-text {
+    color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar-toggler {
+    border: none;
+    /*background: transparent !important;*/
+    /*display: none; 
+ }
+ 
+ .navbar-toggler-icon {
+    background-color: #fff;
+ }
+
+/* ... Weitere Stile ... 
+*/
+
+
 /* Stil für die linke Ausrichtung des Menüs (LTR, Left-to-Right) */
 .menu-left {
     text-align: left;
@@ -24,14 +130,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10;
+    box-sizing: border-box;
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: row;
-    margin-bottom: 150px; /* Neues hinzugefügtes Attribut */
+    /*margin-bottom: 50px;  Neues hinzugefügtes Attribut */
 }
 
 .left-section {
@@ -73,21 +180,27 @@ button:hover {
     display: none;
 }
 
-/* Header-Stile */
 header {
-    display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren */
-    align-items: center; /* Zentrieren Sie die Elemente vertikal */
-    justify-content: space-between; /* Verteilen Sie den verfügbaren Platz zwischen den Elementen */
     background-color: #333;
     color: #fff;
-    padding: 10px 20px; /* Innenabstand oben und unten, links und rechts */
+    /*padding: 1px 2px;  Anpassung des oberen und unteren Padding */
 }
 
-/* Logo-Stile */
+/* Header-Stile */
+/*header {
+    display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren 
+    align-items: center; /* Zentrieren Sie die Elemente vertikal 
+    justify-content: space-between; /* Verteilen Sie den verfügbaren Platz zwischen den Elementen 
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Innenabstand oben und unten, links und rechts 
+}
+
+/* Logo-Stile 
 .logo img {
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
-    margin: 10px;
+    margin: 2px;
 }
 
 .global-navigation ul {
@@ -105,6 +218,54 @@ header {
     text-decoration: none;
     color: #fff;
 }
+*/
+
+
+/*
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Platzieren Sie Elemente an den beiden Enden der Navbar 
+    align-items: center; /* Zentrieren Sie die Elemente vertikal 
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.welcome-text {
+    color: #fff;
+    margin-right: 20px; /* Füge Abstand zwischen dem Text und dem Toggle-Button hinzu 
+    font-size: 24px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none; /* Entfernt Unterstreichungen 
+    color: #fff; /* Farbe der Navigationslinks ändern 
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Farbe des Toggle-Icons ändern 
+}
+
+.navbar-brand {
+    padding: 0; /* Padding des Logos anpassen 
+    margin-right: 20px; /* Rechten Abstand der Navbar-Brand anpassen 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Rechten Abstand der Navigationspunkte anpassen 
+    list-style: none; /* Verhindert die Anzeige von Punkten 
+}
+
+.navbar-brand img {
+    width: 150px; /* Passe die Breite nach Bedarf an 
+    height: auto;  Behalte das Seitenverhältnis bei, damit das Bild nicht verzerrt wird 
+}*/
+
 
 main {
     padding: 20px;
@@ -125,9 +286,16 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
 p {
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 /* Titel-Stile */
@@ -205,28 +373,50 @@ footer {
 
 /* Media Query für Bildschirmbreiten bis 767px */
 @media (max-width: 767px) {
-    .global-navigation li {
+    /*.global-navigation li {
         display: block;
         margin-bottom: 10px;
     }
-
+*/
     .local-navigation li {
         margin-bottom: 5px;
     }
+    
 
     body {
         font-size: 16px; /* Beispielgröße für kleinere Bildschirme */
     }
+
+    /*.navbar-toggler {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }*/
 }
 
 /* Media Query für Bildschirmbreiten von 768px bis 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .global-navigation li {
+    /*.global-navigation li {
         margin-right: 10px;
-    }
+    }*/
 }
 
 /* Media Query für Bildschirmbreiten ab 1024px */
 @media (min-width: 1024px) {
     /* Hier könnten zusätzliche Anpassungen für größere Bildschirme gemacht werden */
+    /*.navbar-toggler {
+        display: none; 
+     }*/
 }
