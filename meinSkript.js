@@ -42,7 +42,8 @@ function genderAndDisplay(elementId, displayTextId, isTextarea = false) {
   if (isTextarea) {
     originalText = element.value; // Verwende .value für Textareas
   } else {
-    originalText = element.querySelector('p').innerText;
+    originalText = element.innerText;
+    //originalText = element.querySelector('p').innerText;
   }
 
   const newText = genderText(originalText);

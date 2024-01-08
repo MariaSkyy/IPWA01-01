@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gendergerechte Sprache</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="meinSkript.js"></script>
 
     <!-- JavaScript-Code im <head>-Bereich -->
@@ -30,207 +32,237 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="logo.jpeg" alt="Logo">
-        </div>
-        <div class="title">
-            <h1>Willkommen auf unserer Webseite</h1>
-        </div>
-        <nav class="global-navigation">
-            <!-- Hier können Sie Ihr Menü mit Links erstellen -->
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="beispiel.html">Beispiele</a></li>
-                <li><a href="wandler.html">Textwandler</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-        <nav class="menu menu-left">
-            <!-- Menü-Links hier -->
-        </nav>
-        
+    <header>   
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navigation" aria-controls="Navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="logo_fertig.jpg" alt="Dein Logo">
+                </a>
+                <span class="welcome-text">Willkommen auf unserer Seite</span>
+                <div class="collapse navbar-collapse" id="Navigation"> 
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beispiel.html">Beispiele</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wandler.html">Textwandler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
     </header>
 
     <main>
-        <section>
-            <p>Hier finden Sie beipsielhaft drei Texte, die teilweise nicht gendergerecht geschrieben sind.</p>
-            <p>Mit dem jeweils darunter befindlichen Button können Sie sich den umgewandelten Text anzeigen lassen.</p>
-            <p>Probieren Sie es einfach mal aus!</p>
-        </section>
-        <!-- Hier kommen die drei Texte mit nicht gendergerechter Sprache -->
-        <section>
-            <h3>Aufstellanleitung: Festbrennstoffherd K 176 F/A 90</h3>
-            <div class="container" id="container1">
-                <div class="left-section">
-                    <div class="text" id="text1">
-                        <p>Für die Aufstellung und dem abgasseitigen Anschluss sind die anwendbaren nationalen und europäischen Normen, 
-                            örtliche und baurechtliche Vorschriften, sowie feuerpolizeiliche Bestimmungen zu beachten. 
-                            Lassen Sie das Gerät nur von einem qualifizierten Fachmann aufstellen und anschließen. Zur korrekten Funktion 
-                            Ihres Gerätes muss der Schornstein, an den Sie das Gerät anschließen wollen, in einwandfreiem Zustand sein 
-                            und bis mind. 400°C belastbar sein. Die Aufstellung des Herdes muss durch einen Fachmann erfolgen. Der Anschluss 
-                            vom Herd zum Schornstein kann seitlich, hinten oder oben links bzw. rechts erfolgen, je nachdem, ob der Käufer 
-                            sich für einen " linken" oder " rechten" Herd " entschieden haben. Achten Sie auf einen waagrechten und sicheren 
-                            Stand des Herdes. Da der Herd die zur Verbrennung benötige Luft dem Aufstellungsraum entnimmt, ist dafür zu sorgen, 
-                            dass über Undichtheiten der Fenster und Außentüren stets genügend Luft nachströmt. Zusätzlich muss der Monteur 
-                            sicherstellen, dass ein Raumvolumen-Leistungsverhältnis von mindestens 4 m³ je kW Nennwärmeleistung gewährleistet 
-                            ist. Für den Herd bedeutet dies, dass das Volumen des Aufstellungsraums mindestens 20 m³ groß sein muss. Ist das 
-                            Volumen geringer, muss ein Fachmann über Lüftungsöffnungen ein Verbrennungsluftverbund mit angrenzenden Räumen 
-                            herstellen (Verbundöffnungen mindestens 150 cm²). Vor dem Anschluss des Herdes an den Schornstein sollte unbedingt 
-                            der zuständige Bezirksschornsteinfeger konsultiert werden. Der Anschluss des Herdes an den Schornstein erfolgt 
-                            durch die entsprechenden Verbindungsstücke.
-                            </p>
-                        <button onclick="genderAndDisplay('text1','displayText1')">Text überprüfen und ändern</button>
-                    </div>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Hier finden Sie beipsielhaft drei Texte, die teilweise nicht gendergerecht geschrieben sind.</p>
+                    <p>Mit dem jeweils darunter befindlichen Button können Sie sich den umgewandelten Text anzeigen lassen.</p>
+                    <p>Probieren Sie es einfach mal aus!</p>
                 </div>
-                <div class="right-section">
+            </div>  
+            <!-- Hier kommen die drei Texte mit nicht gendergerechter Sprache -->
+            <div class="row">
+                <div class="col">
+                    <h3>Aufstellanleitung: Festbrennstoffherd K 176 F/A 90</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--<div class="container" id="container1">
+                        <div class="left-section"> -->
+                        <div class="text" id="text1">
+                            <p>Für die Aufstellung und dem abgasseitigen Anschluss sind die anwendbaren nationalen und europäischen Normen, 
+                                örtliche und baurechtliche Vorschriften, sowie feuerpolizeiliche Bestimmungen zu beachten. 
+                                Lassen Sie das Gerät nur von einem qualifizierten Fachmann aufstellen und anschließen. Zur korrekten Funktion 
+                                Ihres Gerätes muss der Schornstein, an den Sie das Gerät anschließen wollen, in einwandfreiem Zustand sein 
+                                und bis mind. 400°C belastbar sein. Die Aufstellung des Herdes muss durch einen Fachmann erfolgen. Der Anschluss 
+                                vom Herd zum Schornstein kann seitlich, hinten oder oben links bzw. rechts erfolgen, je nachdem, ob der Käufer 
+                                sich für einen " linken" oder " rechten" Herd " entschieden haben. Achten Sie auf einen waagrechten und sicheren 
+                                Stand des Herdes. Da der Herd die zur Verbrennung benötige Luft dem Aufstellungsraum entnimmt, ist dafür zu sorgen, 
+                                dass über Undichtheiten der Fenster und Außentüren stets genügend Luft nachströmt. Zusätzlich muss der Monteur 
+                                sicherstellen, dass ein Raumvolumen-Leistungsverhältnis von mindestens 4 m³ je kW Nennwärmeleistung gewährleistet 
+                                ist. Für den Herd bedeutet dies, dass das Volumen des Aufstellungsraums mindestens 20 m³ groß sein muss. Ist das 
+                                Volumen geringer, muss ein Fachmann über Lüftungsöffnungen ein Verbrennungsluftverbund mit angrenzenden Räumen 
+                                herstellen (Verbundöffnungen mindestens 150 cm²). Vor dem Anschluss des Herdes an den Schornstein sollte unbedingt 
+                                der zuständige Bezirksschornsteinfeger konsultiert werden. Der Anschluss des Herdes an den Schornstein erfolgt 
+                                durch die entsprechenden Verbindungsstücke.
+                            </p>
+                        </div>
+                        <button onclick="genderAndDisplay('text1','displayText1')">Text überprüfen und ändern</button>
+                </div>
+                <div class="col-lg-6">
+                    <!--<div class="right-section">-->
                     <p id="displayText1">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
                 </div>
             </div>
-       
-            <h3>Sicherheits- und Umweltschutzanweisungen für Ihren Kühlschrank</h3>
-            <div class="container" id="container2">
-                <div class="left-section">
-                    <div class="text" id="text2">
-                        <p>Dieses Kapitel beinhaltet die Sicherheitshinweise, um Verletzungsgefahr und materielle Schäden zu vermeiden. 
-                            Bei Nichtbeachtung dieser Hinweise erlischt sämtliche Garantieleistung des Geräts. </p>
-                        <h4>1. Allgemeine Sicherheit</h4>
-                        <ul>
-                            <li>Dieses Gerät darf nicht von Kunden mit eingeschränkten physischen, sensorischen oder geistigen 
-                                Fähigkeiten bedient werden. Die Bedienung dieses Geräts ist nur gestattet, falls Sie von einem 
-                                geschulten Verkäufer gründlich in die Bedienung des Gerätes eingewiesen wurden. Das Spielen von 
-                                Kindern mit diesem Gerät ist nicht erlaubt. </li>
-                            <li>Falls während des Betriebs eine Störung auftritt, ziehen Sie das Gerät vom Netzstecker. </li>
-                            <li>Nachdem Sie den Netzstecker herausgezogen haben, warten Sie mindestens 5 Minuten, bevor Sie es 
-                                erneut einstecken. Ziehen Sie den Netzstecker aus, wenn das Produkt nicht in Betrieb ist. Den 
-                                Stecker auf keinen Fall mit nassen Händen berühren! Ziehen Sie niemals am Netzkabel - ziehen Sie
-                                 direkt am Stecker.</li>
-                            <li>Sollte die Steckdose lose sein, den Stecker des Kühlschranks nicht einstecken.</li>
-                            <li>Falls das Gerät für eine gewisse Dauer nicht benutzt wird, sollte jeder Nutzer den Netzstecker 
-                                ziehen und den Innenraum entleeren.</li>
-                            <li>Verwenden Sie niemals Dampf- oder Sprühreiniger zum Reinigen und Abtauen Ihres Kühlschranks. Die 
-                                Dämpfe oder Nebel können in Kontakt mit stromführenden Teilen geraten und Kurzschlüsse oder 
-                                Stromschläge auslösen!</li>
-                            <li>Spritzen oder schütten Sie aus Sicherheitsgründen kein Wasser direkt auf oder in den Kühlschrank! 
-                                Es besteht Stromschlaggefahr!</li>
-                            <li>Benutzen Sie das Gerät niemals, wenn die sich auf der Oberseite bzw. auf der Rückseite 
-                                befindlichen Bereiche mit den elektronischen Leitern im Inneren geöffnet sind.</li>
-                            <li>Das Gerät sollte bei Störungen auf keinen Fall betrieben werden, da eine Stromschlaggefahr 
-                                besteht. Führen Sie nichts durch, bevor Sie mit einem Mitarbeiter des Kundendienstes Kontakt 
-                                aufgenommen haben.</li>
-                            <li>Schließen Sie das Produkt an eine geerdete Steckdose an. Die Erdung muss durch einen Fachmann 
-                                durchgeführt werden.</li>
-                            <li>Berühren Sie gefrorene Lebensmittel nicht mit der Hand! Sie könnten festfrieren!</li>
-                            <li>Legen Sie keine flüssigen Getränke in Flaschen oder Dosen in das Gefrierfach. Sie könnten platzen!</li>
-                            <li>Stellen Sie Getränke fest verschlossen und im senkrechten Zustand ab.</li>
-                            <li>Sprühen Sie keine entflammbaren Stoffe, in der Nähe des Kühlschranks, da eine Feuer- und 
-                                Explosionsgefahr besteht.</li>
-                            <li>Lagern Sie keine Produkte die entflammbar sind oder entflammbare Gase beinhalten (Spraydosen u.Ä.) 
-                                oder explosive Stoffe in Ihrem Kühlschrank.</li>
-                            <li>Stellen Sie keine mit Flüssigkeit gefüllten Objekte auf den Kühlschrank. Bei elektrischen Geräten 
-                                kann ein Wasserspritzer zu einem Kurzschluss oder zu einem Brand führen.</li>
-                            <li>Setzen Sie das Gerät keinem Regen, Schnee, direktem Sonnenlicht oder Wind aus, da dies die 
-                                elektrische Sicherheit beeinträchtigt.</li>
-                            <li>Achten Sie darauf an den beweglichen Teilen im Innenraum des Geräts nicht Ihre Hände oder sonstige 
-                                Teile Ihres Körpers einzuklemmen.</li>
-                            <li>Verwenden Sie niemals die Türen und Fächer des Kühlschranks als Stützen oder Stufen. Dies würde zum 
-                                Umkippen des Geräts oder zu Schäden an den Bestandteilen führen.</li>
-                            <li>Achten Sie darauf, dass das Netzkabel nicht zerquetscht wird.</li>
-                        </ul>
-                        <h4>2. HC Hinweis</h4>
-                        <p>Sofern Ihr Gerät mit dem Kühlmittel R600a arbeitet, achten Sie darauf, Kühlkreislauf und Leitungen 
-                            während Betrieb und Transport nicht zu beschädigen. Dieses Gas ist entflammbar. Bei Beschädigungen 
-                            halten Sie das Produkt von potenziellen Zündquellen fern und sorgen Sie für eine gute Belüftung des 
-                            Raumes, in dem das Gerät aufgestellt wurde. Das Typenschild links im Innenraum informiert Sie über 
-                            den in Ihrem Gerät eingesetzten Kühlmitteltyp. </p>
-                            <h3>3. Für Modelle mit Wasserspender </h3>
-                            <p>Damit der Wasserkreislauf des Kühlschranks reibungslos arbeitet, muss der Druck des 
-                                Versorgungswassers 1 bis 8 bar betragen. Wenn der Druck des Versorgungswassers 5 bar übersteigt, 
-                                sollte ein Druckregler verwendet werden. Falls der Druck der Wasserversorgung 8 bar übersteigt, 
-                                sollte der Wasserkreislauf des Kühlschranks nicht an die Wasserversorgung angeschlossen werden. 
-                                Falls Sie nicht wissen, wie Sie den Druck des Versorgungswassers messen, wenden Sie sich bitte an 
-                                einen Experten. Verwenden Sie nur Trinkwasser. </p>
-                        <button onclick="genderAndDisplay('text2','displayText2')">Text überprüfen und ändern</button>
-                    </div>
-                </div>
-                <div class="right-section">
-                    <p id="displayText2">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
+            
+            <div class="row">   
+                <div class="col">    
+                    <h3>Sicherheits- und Umweltschutzanweisungen für Ihren Kühlschrank</h3>
                 </div>
             </div>
-        
-            <h3>7 Tipps zur sicheren Nutzung des Internets</h3>
-            <div class="container" id="container3">
-                <div class="left-section">
-                    <div class="text" id="text3">
-                        <h4>1. Passen Sie Ihren Webbrowser an und halten Sie ihn aktuell</h4>
-                        <p>Zum Surfen im Internet benötigen Sie einen Browser. Achten Sie darauf, dass Ihr Webbrowser immer auf 
-                            dem aktuellen Stand ist. Mit Aktualisierungen werden auch Sicherheitslücken geschlossen. Deaktivieren 
-                            Sie alle nicht benötigten Erweiterungen, Add-ons oder auch Plug-ins. Nutzen Sie ein Programm zum 
-                            Blockieren von Werbung, um sich vor Malvertising, also der Verbreitung von Schadsoftware über 
-                            Werbeeinblendungen, zu schützen.</p>
-                        <h4>2. Halten Sie Ihr Betriebssystem und andere Software aktuell</h4>
-                        <p>Verwenden Sie eine aktuelle Version des Betriebssystems und der installierten Programme. Nutzen Sie 
-                            wenn möglich die Funktion zur automatischen Aktualisierung. Ob das Betriebssystem Ihres Computers 
-                            auf dem aktuellen Stand ist, erfahren Sie in den Einstellungen unter Update. Achten Sie auch auf 
-                            Hinweise zu neuen Versionen des Betriebssystems oder von Anwendungen.
-                            Deinstallieren Sie Programme, die sie nicht länger nutzen. Je weniger Anwendungen installiert sind, 
-                            desto kleiner ist die Angriffsfläche Ihres gesamten Systems.</p>
-                        <h4>3. Nutzen Sie Anwendungen zum Virenschutz und eine Firewall</h4>
-                        <p>In den gängigen Betriebssystemen sind ein Virenschutz und eine Firewall integriert, die schon in der 
-                            Standardkonfiguration Angriffe aus dem Internet erschweren. Aktivieren Sie diese oder verwenden Sie 
-                            ein Virenschutzprogramm eines anderen Anbieters.
-                            Bedenken Sie, dass diese Maßnahme nur begleitend wirksam sein kann. Ihre Anwendung verringert nicht 
-                            die Bedeutung der übrigen Tipps. Lassen Sie sich nicht durch einen aktivierten Virenschutz oder die 
-                            Firewall zu Unvorsichtigkeit verleiten, sie garantieren keine vollständige Sicherheit.</p>
-                        <h4>4. Legen Sie unterschiedliche Benutzerkonten an</h4>
-                        <p>Schadprogramme haben die gleichen Rechte auf dem PC wie das Benutzerkonto, über das sie auf den Rechner 
-                            gelangt sind. Als Administrator haben Sie vollen Zugriff auf fast alle Bereiche Ihres PCs. Daher sollten 
-                            Sie nur dann mit Administratorrechten arbeiten, wenn es unbedingt erforderlich ist.
-                            Richten Sie für jeden Anwender des PCs unterschiedliche, passwortgeschützte Benutzerkonten ein. Je nach 
-                            Betriebssystem ist dies über die (System-)Einstellungen oder die Systemsteuerung möglich. Vergeben Sie 
-                            für diese Konten nur die Berechtigungen, die der jeweilige Nutzer benötigt. So werden auch private Dateien 
-                            vor dem Zugriff anderer geschützt. Surfen Sie im Internet mit einem eingeschränkten Benutzerkonto und 
-                            nicht in der Rolle des Administrators.</p>
-                        <h4>5. Schützen Sie Ihre Online- und Benutzerkonten mit sicheren Passwörtern</h4>
-                        <p>Vergeben Sie für jedes Online- und Benutzerkonto ein eigenes, sicheres Passwort und ändern Sie 
-                            schnellstmöglich alle Passwörter, wenn diese in falsche Hände geraten sein könnten. Ändern Sie auch 
-                            die von den Herstellern oder Dienstanbietern voreingestellten Passwörter nach der ersten Nutzung.
-                            Dort, wo eine Zwei-Faktor-Authentisierung (2FA) angeboten wird, können Sie damit den Zugang zu Ihrem 
-                            Onlinekonto zusätzlich absichern.</p>
-                        <h4>6. Seien Sie vorsichtig bei E-Mails und deren Anhängen</h4>
-                        <p>Verzichten Sie, wenn möglich, auf die Darstellung und Erstellung von E-Mails im HTML-Format und verwenden 
-                            Sie stattdessen ein reines Textformat. Die Nutzung des HTML-Formats können Sie über die Einstellungen 
-                            Ihres Mailprogramms ändern. Seien Sie vorsichtig beim Öffnen von E-Mail-Anhängen oder beim Klick auf 
-                            einen Link, denn Schadprogramme werden oft über in E-Mails integrierte Bilder oder Dateianhänge 
-                            verbreitet oder verbergen sich hinter Links. Besonders zu beachten ist das bei E-Mails, deren Absender 
-                            Ihnen nicht bekannt ist.
-                            Falls Ihnen eine E-Mail von einem bekannten Absender seltsam vorkommen sollte, fragen Sie lieber nach, 
-                            ob die E-Mail tatsächlich von ihm stammt. Nutzen Sie dabei aber nicht die in der E-Mail angegebenen 
-                            Kontaktmöglichkeiten. Sie könnten gefälscht sein.
-                            Unerwünschte oder gefährliche E-Mails können Sie an einigen Merkmalen identifizieren: Indem Sie mit der 
-                            Maus über den Absender fahren oder auf diesen klicken, können Sie beispielsweise erkennen, ob der 
-                            Absender gefälscht ist. Achten Sie dabei auf wirre Buchstabenfolgen, den Tausch durch optisch ähnliche 
-                            Buchstaben oder eine ausländische Domain, also die Endung der E-Mail-Adresse. Überprüfen Sie auch die 
-                            Betreffzeile und den Text der E-Mail auf Sinnhaftigkeit und Rechtschreibung. Betrüger machen hier oft 
-                            Fehler. Seien Sie zudem skeptisch, wenn eine schnelle Reaktion von Ihnen eingefordert wird.</p>
-                        <h4>7. Seien Sie zurückhaltend mit der Weitergabe persönlicher Daten</h4>
-                        <p>Kriminelle im Internet steigern ihre Erfolgsraten, indem sie ihre Opfer individuell ansprechen: 
-                            Zuvor ausspionierte Daten, wie etwa Surfgewohnheiten oder Namen aus dem persönlichen Umfeld, werden 
-                            dazu genutzt, Vertrauen zu erwecken. Persönliche Daten gelten heute als Währung im Netz und so werden 
-                            sie auch gehandelt. Überlegen Sie, welchen Onlinediensten Sie Ihre persönlichen Daten anvertrauen 
-                            möchten.
-                            Auch die ungeschützte Weitergabe persönlicher Daten in offenen ungesicherten Netzen sollte vermieden 
-                            werden.</p>
-                        <button onclick="genderAndDisplay('text3','displayText3')">Text überprüfen und ändern</button>
-                    </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--<div class="container" id="container2">
+                        <div class="left-section">-->
+                            <div class="text" id="text2">
+                                <p>Dieses Kapitel beinhaltet die Sicherheitshinweise, um Verletzungsgefahr und materielle Schäden zu vermeiden. 
+                                    Bei Nichtbeachtung dieser Hinweise erlischt sämtliche Garantieleistung des Geräts. </p>
+                                <b>1. Allgemeine Sicherheit</b>
+                                <ul>
+                                    <li>Dieses Gerät darf nicht von Kunden mit eingeschränkten physischen, sensorischen oder geistigen 
+                                        Fähigkeiten bedient werden. Die Bedienung dieses Geräts ist nur gestattet, falls Sie von einem 
+                                        geschulten Verkäufer gründlich in die Bedienung des Gerätes eingewiesen wurden. Das Spielen von 
+                                        Kindern mit diesem Gerät ist nicht erlaubt. </li>
+                                    <li>Falls während des Betriebs eine Störung auftritt, ziehen Sie das Gerät vom Netzstecker. </li>
+                                    <li>Nachdem Sie den Netzstecker herausgezogen haben, warten Sie mindestens 5 Minuten, bevor Sie es 
+                                        erneut einstecken. Ziehen Sie den Netzstecker aus, wenn das Produkt nicht in Betrieb ist. Den 
+                                        Stecker auf keinen Fall mit nassen Händen berühren! Ziehen Sie niemals am Netzkabel - ziehen Sie
+                                        direkt am Stecker.</li>
+                                    <li>Sollte die Steckdose lose sein, den Stecker des Kühlschranks nicht einstecken.</li>
+                                    <li>Falls das Gerät für eine gewisse Dauer nicht benutzt wird, sollte jeder Nutzer den Netzstecker 
+                                        ziehen und den Innenraum entleeren.</li>
+                                    <li>Verwenden Sie niemals Dampf- oder Sprühreiniger zum Reinigen und Abtauen Ihres Kühlschranks. Die 
+                                        Dämpfe oder Nebel können in Kontakt mit stromführenden Teilen geraten und Kurzschlüsse oder 
+                                        Stromschläge auslösen!</li>
+                                    <li>Spritzen oder schütten Sie aus Sicherheitsgründen kein Wasser direkt auf oder in den Kühlschrank! 
+                                        Es besteht Stromschlaggefahr!</li>
+                                    <li>Benutzen Sie das Gerät niemals, wenn die sich auf der Oberseite bzw. auf der Rückseite 
+                                        befindlichen Bereiche mit den elektronischen Leitern im Inneren geöffnet sind.</li>
+                                    <li>Das Gerät sollte bei Störungen auf keinen Fall betrieben werden, da eine Stromschlaggefahr 
+                                        besteht. Führen Sie nichts durch, bevor Sie mit einem Mitarbeiter des Kundendienstes Kontakt 
+                                        aufgenommen haben.</li>
+                                    <li>Schließen Sie das Produkt an eine geerdete Steckdose an. Die Erdung muss durch einen Fachmann 
+                                        durchgeführt werden.</li>
+                                    <li>Berühren Sie gefrorene Lebensmittel nicht mit der Hand! Sie könnten festfrieren!</li>
+                                    <li>Legen Sie keine flüssigen Getränke in Flaschen oder Dosen in das Gefrierfach. Sie könnten platzen!</li>
+                                    <li>Stellen Sie Getränke fest verschlossen und im senkrechten Zustand ab.</li>
+                                    <li>Sprühen Sie keine entflammbaren Stoffe, in der Nähe des Kühlschranks, da eine Feuer- und 
+                                        Explosionsgefahr besteht.</li>
+                                    <li>Lagern Sie keine Produkte die entflammbar sind oder entflammbare Gase beinhalten (Spraydosen u.Ä.) 
+                                        oder explosive Stoffe in Ihrem Kühlschrank.</li>
+                                    <li>Stellen Sie keine mit Flüssigkeit gefüllten Objekte auf den Kühlschrank. Bei elektrischen Geräten 
+                                        kann ein Wasserspritzer zu einem Kurzschluss oder zu einem Brand führen.</li>
+                                    <li>Setzen Sie das Gerät keinem Regen, Schnee, direktem Sonnenlicht oder Wind aus, da dies die 
+                                        elektrische Sicherheit beeinträchtigt.</li>
+                                    <li>Achten Sie darauf an den beweglichen Teilen im Innenraum des Geräts nicht Ihre Hände oder sonstige 
+                                        Teile Ihres Körpers einzuklemmen.</li>
+                                    <li>Verwenden Sie niemals die Türen und Fächer des Kühlschranks als Stützen oder Stufen. Dies würde zum 
+                                        Umkippen des Geräts oder zu Schäden an den Bestandteilen führen.</li>
+                                    <li>Achten Sie darauf, dass das Netzkabel nicht zerquetscht wird.</li>
+                                </ul>
+                                <b>2. HC Hinweis</b>
+                                <p>Sofern Ihr Gerät mit dem Kühlmittel R600a arbeitet, achten Sie darauf, Kühlkreislauf und Leitungen 
+                                    während Betrieb und Transport nicht zu beschädigen. Dieses Gas ist entflammbar. Bei Beschädigungen 
+                                    halten Sie das Produkt von potenziellen Zündquellen fern und sorgen Sie für eine gute Belüftung des 
+                                    Raumes, in dem das Gerät aufgestellt wurde. Das Typenschild links im Innenraum informiert Sie über 
+                                    den in Ihrem Gerät eingesetzten Kühlmitteltyp. </p>
+                                <b>3. Für Modelle mit Wasserspender </b>
+                                <p>Damit der Wasserkreislauf des Kühlschranks reibungslos arbeitet, muss der Druck des 
+                                    Versorgungswassers 1 bis 8 bar betragen. Wenn der Druck des Versorgungswassers 5 bar übersteigt, 
+                                    sollte ein Druckregler verwendet werden. Falls der Druck der Wasserversorgung 8 bar übersteigt, 
+                                    sollte der Wasserkreislauf des Kühlschranks nicht an die Wasserversorgung angeschlossen werden. 
+                                    Falls Sie nicht wissen, wie Sie den Druck des Versorgungswassers messen, wenden Sie sich bitte an 
+                                    einen Experten. Verwenden Sie nur Trinkwasser. </p>
+                            </div>
+                            <button onclick="genderAndDisplay('text2','displayText2')">Text überprüfen und ändern</button>
                 </div>
-                <div class="right-section">
+                <div class="col-lg-6">
+                    <!--<div class="right-section">-->
+                        <p id="displayText2">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                <h3>7 Tipps zur sicheren Nutzung des Internets</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                        <!--<div class="container" id="container3">
+                        <div class="left-section">-->
+                        <div class="text" id="text3">
+                                <b>1. Passen Sie Ihren Webbrowser an und halten Sie ihn aktuell</b>
+                                <p>Zum Surfen im Internet benötigen Sie einen Browser. Achten Sie darauf, dass Ihr Webbrowser immer auf 
+                                    dem aktuellen Stand ist. Mit Aktualisierungen werden auch Sicherheitslücken geschlossen. Deaktivieren 
+                                    Sie alle nicht benötigten Erweiterungen, Add-ons oder auch Plug-ins. Nutzen Sie ein Programm zum 
+                                    Blockieren von Werbung, um sich vor Malvertising, also der Verbreitung von Schadsoftware über 
+                                    Werbeeinblendungen, zu schützen.</p>
+                                <b>2. Halten Sie Ihr Betriebssystem und andere Software aktuell</b>
+                                <p>Verwenden Sie eine aktuelle Version des Betriebssystems und der installierten Programme. Nutzen Sie 
+                                    wenn möglich die Funktion zur automatischen Aktualisierung. Ob das Betriebssystem Ihres Computers 
+                                    auf dem aktuellen Stand ist, erfahren Sie in den Einstellungen unter Update. Achten Sie auch auf 
+                                    Hinweise zu neuen Versionen des Betriebssystems oder von Anwendungen.
+                                    Deinstallieren Sie Programme, die sie nicht länger nutzen. Je weniger Anwendungen installiert sind, 
+                                    desto kleiner ist die Angriffsfläche Ihres gesamten Systems.</p>
+                                <b>3. Nutzen Sie Anwendungen zum Virenschutz und eine Firewall</b>
+                                <p>In den gängigen Betriebssystemen sind ein Virenschutz und eine Firewall integriert, die schon in der 
+                                    Standardkonfiguration Angriffe aus dem Internet erschweren. Aktivieren Sie diese oder verwenden Sie 
+                                    ein Virenschutzprogramm eines anderen Anbieters.
+                                    Bedenken Sie, dass diese Maßnahme nur begleitend wirksam sein kann. Ihre Anwendung verringert nicht 
+                                    die Bedeutung der übrigen Tipps. Lassen Sie sich nicht durch einen aktivierten Virenschutz oder die 
+                                    Firewall zu Unvorsichtigkeit verleiten, sie garantieren keine vollständige Sicherheit.</p>
+                                <b>4. Legen Sie unterschiedliche Benutzerkonten an</b>
+                                <p>Schadprogramme haben die gleichen Rechte auf dem PC wie das Benutzerkonto, über das sie auf den Rechner 
+                                    gelangt sind. Als Administrator haben Sie vollen Zugriff auf fast alle Bereiche Ihres PCs. Daher sollten 
+                                    Sie nur dann mit Administratorrechten arbeiten, wenn es unbedingt erforderlich ist.
+                                    Richten Sie für jeden Anwender des PCs unterschiedliche, passwortgeschützte Benutzerkonten ein. Je nach 
+                                    Betriebssystem ist dies über die (System-)Einstellungen oder die Systemsteuerung möglich. Vergeben Sie 
+                                    für diese Konten nur die Berechtigungen, die der jeweilige Nutzer benötigt. So werden auch private Dateien 
+                                    vor dem Zugriff anderer geschützt. Surfen Sie im Internet mit einem eingeschränkten Benutzerkonto und 
+                                    nicht in der Rolle des Administrators.</p>
+                                <b>5. Schützen Sie Ihre Online- und Benutzerkonten mit sicheren Passwörtern</b>
+                                <p>Vergeben Sie für jedes Online- und Benutzerkonto ein eigenes, sicheres Passwort und ändern Sie 
+                                    schnellstmöglich alle Passwörter, wenn diese in falsche Hände geraten sein könnten. Ändern Sie auch 
+                                    die von den Herstellern oder Dienstanbietern voreingestellten Passwörter nach der ersten Nutzung.
+                                    Dort, wo eine Zwei-Faktor-Authentisierung (2FA) angeboten wird, können Sie damit den Zugang zu Ihrem 
+                                    Onlinekonto zusätzlich absichern.</p>
+                                <b>6. Seien Sie vorsichtig bei E-Mails und deren Anhängen</b>
+                                <p>Verzichten Sie, wenn möglich, auf die Darstellung und Erstellung von E-Mails im HTML-Format und verwenden 
+                                    Sie stattdessen ein reines Textformat. Die Nutzung des HTML-Formats können Sie über die Einstellungen 
+                                    Ihres Mailprogramms ändern. Seien Sie vorsichtig beim Öffnen von E-Mail-Anhängen oder beim Klick auf 
+                                    einen Link, denn Schadprogramme werden oft über in E-Mails integrierte Bilder oder Dateianhänge 
+                                    verbreitet oder verbergen sich hinter Links. Besonders zu beachten ist das bei E-Mails, deren Absender 
+                                    Ihnen nicht bekannt ist.
+                                    Falls Ihnen eine E-Mail von einem bekannten Absender seltsam vorkommen sollte, fragen Sie lieber nach, 
+                                    ob die E-Mail tatsächlich von ihm stammt. Nutzen Sie dabei aber nicht die in der E-Mail angegebenen 
+                                    Kontaktmöglichkeiten. Sie könnten gefälscht sein.
+                                    Unerwünschte oder gefährliche E-Mails können Sie an einigen Merkmalen identifizieren: Indem Sie mit der 
+                                    Maus über den Absender fahren oder auf diesen klicken, können Sie beispielsweise erkennen, ob der 
+                                    Absender gefälscht ist. Achten Sie dabei auf wirre Buchstabenfolgen, den Tausch durch optisch ähnliche 
+                                    Buchstaben oder eine ausländische Domain, also die Endung der E-Mail-Adresse. Überprüfen Sie auch die 
+                                    Betreffzeile und den Text der E-Mail auf Sinnhaftigkeit und Rechtschreibung. Betrüger machen hier oft 
+                                    Fehler. Seien Sie zudem skeptisch, wenn eine schnelle Reaktion von Ihnen eingefordert wird.</p>
+                                <b>7. Seien Sie zurückhaltend mit der Weitergabe persönlicher Daten</b>
+                                <p>Kriminelle im Internet steigern ihre Erfolgsraten, indem sie ihre Opfer individuell ansprechen: 
+                                    Zuvor ausspionierte Daten, wie etwa Surfgewohnheiten oder Namen aus dem persönlichen Umfeld, werden 
+                                    dazu genutzt, Vertrauen zu erwecken. Persönliche Daten gelten heute als Währung im Netz und so werden 
+                                    sie auch gehandelt. Überlegen Sie, welchen Onlinediensten Sie Ihre persönlichen Daten anvertrauen 
+                                    möchten.
+                                    Auch die ungeschützte Weitergabe persönlicher Daten in offenen ungesicherten Netzen sollte vermieden 
+                                    werden.
+                                </p>
+                        </div>
+                        <button onclick="genderAndDisplay('text3','displayText3')">Text überprüfen und ändern</button>
+                </div>
+                <div class="col-lg-6">
+                    <!--<div class="right-section">-->
                     <p id="displayText3">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
                 </div>
             </div>
-        </section>
-        
+        </div>
     </main>
 
     <!-- Footer -->
