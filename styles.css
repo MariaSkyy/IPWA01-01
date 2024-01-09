@@ -4,11 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.menu {
+/*.menu {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+}*/
 
 /* Stile für die angepasste Navbar-Klasse */
 .navbar.navbar-custom {
@@ -60,15 +60,23 @@
     margin-bottom: 20px; /* Abstand nach jeder Row */
 }
 
-/* Stil für die linke Ausrichtung des Menüs (LTR, Left-to-Right) */
+/* Stil für die linke Ausrichtung des Menüs (LTR, Left-to-Right)
 .menu-left {
-    text-align: left;
-}
+    
+} */
 
-/* Stil für die rechte Ausrichtung des Menüs (RTL, Right-to-Left) */
-.menu-right {
+#localNav.text-right{
     text-align: right;
 }
+
+#localNav.text-left{
+    text-align: right;
+}
+
+/* Stil für die rechte Ausrichtung des Menüs (RTL, Right-to-Left) 
+.menu-right {
+    text-align: right;
+} */
 
 /* Globale Stildefinitionen */
 body {
@@ -173,7 +181,7 @@ aside {
     padding: 10px;
 }
 
-.local-navigation ul {
+/*.local-navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -186,7 +194,7 @@ aside {
 .local-navigation a {
     text-decoration: none;
     color: #333;
-}
+}*/
 
 footer {
     background-color: #333;
@@ -233,9 +241,9 @@ footer {
 
 /* Media Query für Bildschirmbreiten bis 767px */
 @media (max-width: 767px) {
-    .local-navigation li {
+    /*.local-navigation li {
         margin-bottom: 5px;
-    }
+    }*/
     
     body {
         font-size: 16px; /* Beispielgröße für kleinere Bildschirme */

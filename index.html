@@ -10,26 +10,10 @@
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="meinSkript.js"></script>
     
 
     <!-- JavaScript-Code im <head>-Bereich -->
-    <script>
-        function setMenuAlignment() {
-            const language = navigator.language || navigator.userLanguage; //gibt bevorzugte Sprache des Nutzers zurück
-            const menu = document.querySelector('.menu'); // Menüleiste auswählen, HTML Klasse Menü (wenn sie so heißt) wird ausgewählt
-
-            // Prüfen Sie, ob die erkannte Schriftkultur von rechts nach links (RTL) ist
-            if (language.toLowerCase().startsWith('ar') || language.toLowerCase().startsWith('he')) { //überprüft, ob die erkannte Schriftkultur mit 'ar' (Arabisch) oder 'he' (Hebräisch) beginnt, und das nicht case sensitive
-                menu.classList.remove('menu-left'); // Entfernen Sie die linke Ausrichtung
-                menu.classList.add('menu-right');    // Fügen Sie die rechte Ausrichtung hinzu
-            } else {
-                menu.classList.remove('menu-right'); // Entfernen Sie die rechte Ausrichtung
-                menu.classList.add('menu-left');      // Fügen Sie die linke Ausrichtung hinzu (Standard)
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', setMenuAlignment); //wartet, bis Dokument vollständig geladen, um Ausrichtung Menü zu setzen
-    </script>
 
 </head>
 
@@ -67,34 +51,37 @@
 
     <!-- Content-Bereich -->
     <main>
-        <aside class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#">Technische Begriffe</a></li>
-                    <li><a href="#">Schulungen</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </aside>
-
         <div class="container">
-            <!-- Hier können Sie den Inhalt Ihrer Webseite platzieren -->
-            <h2>Willkommen beim Gendermat.</h2>
-            <p>"Sprache formt das Denken und Denken formt die Sprache." - Benjamin Lee Whorf (Zugeschrieben)</p>
-            <p>Schon immer hat die Sprache einen sehr wichtigen Teil in unserem Leben ausgemacht.</p>
-            <p>Selbst Benjamin Lee Whorf war schon bewusst, dass die Struktur der Sprache das Denken beeinflusst.</p>
-            <p>Dies und unter anderem die feministische und die LGBTQ+ Bewegung, führten dazu, dass wir nun mehr Augenmerk auf die gendergerechte Sprache legen.</p>
-            <p></p>
-            <p>Jedoch ist sich nicht jeder Mensch bewusst, wie gendergerechte Sprache zu formulieren ist.</p>
-            <p></p>
-            <p>Um dieses Problem anzugehen, finden Sie auf dieser Webseite Hilfestellung unterschiedlicher Art zur korrekten Sprache.</p>
-            <p></p>
-            <p>Hier finden Sie einige fiktive Anleitungen, die gendergerecht transformiert werden.</p>
-            <p></p>
-            <p>Sie haben eigene Texte, die umgewandelt werden sollen? Dann schauen Sie doch mal zu unserem Textwandler.</p>
-            <p></p>
-
-
+            <div class="row">
+                <div class="col" id="localNav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Technische Begriffe</a></li>
+                            <li><a href="#">Schulungen</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Hier können Sie den Inhalt Ihrer Webseite platzieren -->
+                    <h2>Willkommen beim Gendermat.</h2>
+                    <p>"Sprache formt das Denken und Denken formt die Sprache." - Benjamin Lee Whorf (Zugeschrieben)</p>
+                    <p>Schon immer hat die Sprache einen sehr wichtigen Teil in unserem Leben ausgemacht.</p>
+                    <p>Selbst Benjamin Lee Whorf war schon bewusst, dass die Struktur der Sprache das Denken beeinflusst.</p>
+                    <p>Dies und unter anderem die feministische und die LGBTQ+ Bewegung, führten dazu, dass wir nun mehr Augenmerk auf die gendergerechte Sprache legen.</p>
+                    <p></p>
+                    <p>Jedoch ist sich nicht jeder Mensch bewusst, wie gendergerechte Sprache zu formulieren ist.</p>
+                    <p></p>
+                    <p>Um dieses Problem anzugehen, finden Sie auf dieser Webseite Hilfestellung unterschiedlicher Art zur korrekten Sprache.</p>
+                    <p></p>
+                    <p>Hier finden Sie einige fiktive Anleitungen, die gendergerecht transformiert werden.</p>
+                    <p></p>
+                    <p>Sie haben eigene Texte, die umgewandelt werden sollen? Dann schauen Sie doch mal zu unserem Textwandler.</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
         
     </main>
@@ -111,7 +98,6 @@
         </div>
         
     </footer>
-
 
 </body>
 </html>
