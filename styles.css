@@ -4,11 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*.menu {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}*/
 
 /* Stile für die angepasste Navbar-Klasse */
 .navbar.navbar-custom {
@@ -60,11 +55,6 @@
     margin-bottom: 20px; /* Abstand nach jeder Row */
 }
 
-/* Stil für die linke Ausrichtung des Menüs (LTR, Left-to-Right)
-.menu-left {
-    
-} */
-
 #localNav.text-right{
     text-align: right;
 }
@@ -72,11 +62,6 @@
 #localNav.text-left{
     text-align: left;
 }
-
-/* Stil für die rechte Ausrichtung des Menüs (RTL, Right-to-Left) 
-.menu-right {
-    text-align: right;
-} */
 
 /* Globale Stildefinitionen */
 body {
@@ -88,23 +73,8 @@ body {
 
 .container {
     min-height: 10vh;
-    /*display: flex;*/
     flex-direction: row;
-    /*margin-bottom: 50px;  Neues hinzugefügtes Attribut */
 }
-
-/*.left-section {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-}
-
-.right-section {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-    text-align: left;
-}*/
 
 textarea {
     width: 100%;
@@ -112,7 +82,6 @@ textarea {
     margin-bottom: 10px;
     resize: none; /* Verhindert das Vergrößern/Verkleinern des Textfelds durch den Benutzer */
 }
-
 
 button {
     display: block;
@@ -181,32 +150,18 @@ aside {
     padding: 10px;
 }
 
-/*.local-navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.local-navigation li {
-    margin-bottom: 10px;
-}
-
-.local-navigation a {
-    text-decoration: none;
-    color: #333;
-}*/
-
 footer {
     background-color: #333;
     color: #fff;
     justify-content: space-between; /* Text links, Links in der Mitte */
     align-items: center; /* Vertikal zentrieren */
     padding: 20px 0; /* Abstand oben und unten im Footer */
-    margin-top: auto;
     bottom: 0;
     width: 100%;
     text-align: center;
     display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren */
+    position: relative;
+    margin-top: auto; /*????? bringt das was?*/
 }
 
 /* Stildefinitionen für die Texte */
@@ -240,11 +195,7 @@ footer {
 }
 
 /* Media Query für Bildschirmbreiten bis 767px */
-@media (max-width: 767px) {
-    /*.local-navigation li {
-        margin-bottom: 5px;
-    }*/
-    
+@media (max-width: 767px) {    
     body {
         font-size: 16px; /* Beispielgröße für kleinere Bildschirme */
     }
@@ -266,7 +217,4 @@ footer {
 /* Media Query für Bildschirmbreiten ab 1024px */
 @media (min-width: 1024px) {
     /* Hier könnten zusätzliche Anpassungen für größere Bildschirme gemacht werden */
-    /*.navbar-toggler {
-        display: none; 
-     }*/
 }

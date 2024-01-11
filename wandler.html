@@ -51,18 +51,19 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col">
+                    <p>Fügen Sie ihren eigenen Text bitte hier ein:</p>
+                </div>
+                <div class="col">
+                    <p>Geänderter Text:</p>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-6">
-                <!--<div class="left-section">-->
-                    <label for="inputTextFrei">Text zum Gendern:</label>
                     <textarea id="inputTextFrei" rows="4" cols="50"></textarea>
-                    <!--<button onclick="genderAndDisplay('inputTextFrei','displayTextFrei', true)">Text überprüfen und ändern</button>-->
-                    <button onclick="checkCodeInjection()">Text überprüfen und ändern</button>
+                    <button onclick="genderAndDisplay('inputTextFrei','displayTextFrei', true);">Text überprüfen und ändern</button>
                 </div>
                 <div class="col-lg-6">
-                    <!--<div class="right-section">-->
-                        <!-- Header -->
-                        <!-- Header --// <label for="displayTextFrei">Geänderter Text:</label>
-                        // <div id="displayTextFrei"></div> -->
                     <p id="displayTextFrei">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
                 </div>
             </div>
@@ -70,7 +71,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2023 Ihre Firma</p>
         <div class="legal-info">
             <ul>
