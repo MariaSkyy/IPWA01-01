@@ -43,12 +43,35 @@
     </header>
 
     <main>
-        <section>
-            <p>Ihnen sind auf dieser Webseite Fragen aufgekommen, die unbeantwortet blieben?</p>
-            <p>Kontaktieren Sie uns gern!</p>
-            <p>Dazu haben Sie die folgenden Möglichkeiten:</p>
-            <p></p>
-        </section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <h2>Kontaktformular</h2>
+                    <p>Ihnen sind auf dieser Webseite Fragen aufgekommen, die unbeantwortet blieben?</p>
+                    <p>Kontaktieren Sie uns gern!</p>
+                    <p>Dazu füllen Sie bitte die folgenden Felder aus:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Dein Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-Mail Adresse</label>
+                            <input type="email" class="form-control" id="email" placeholder="deine@email.de">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Nachricht</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Deine Nachricht"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Absenden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -61,8 +84,6 @@
                 <li><a href="agb.html">AGB</a></li>
             </ul>
         </div>
-        
     </footer>
-
 </body>
 </html>

@@ -78,7 +78,40 @@ function setLocalNav() {
   }
 }
 
+function loremWiederholung(){
+  console.log("Wdh geladen");
+  // Zielfeld
+  var contentElement = document.getElementById("loremIpsum");
+
+  var text="";
+
+  // Schleife zum Einfügen von "Lorem Ipsum"
+  for (var i = 0; i < 20; i++) {
+      // Erstelle ein neues Paragraph-Element
+      //var paragraph = document.createElement("p");
+      // Füge den Text "Lorem Ipsum" hinzu
+      //paragraph.textContent = "Lorem Ipsum ";
+      // Füge das Paragraph-Element zum Zielfeld hinzu
+      //contentElement.appendChild(paragraph);
+      text = text + "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ";
+      //contentElement.innerText="Lorem Ipsum";
+  }
+  //contentElement.appendChild(paragraph);
+  contentElement.innerText=text;
+}
+
+
 window.onload = function() {
   // Code, der nach dem Laden der Seite ausgeführt wird
-  setLocalNav();
+  try {
+    setLocalNav();
+  } catch (error) {
+    console.error('Fehler in setLocalNav:', error);
+  }
+
+  try {
+    loremWiederholung();
+  } catch (error) {
+    console.error('Fehler in loremWiederholung:', error);
+  }
 };

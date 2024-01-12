@@ -17,7 +17,7 @@
 
 .navbar.navbar-custom .welcome-text {
     color: #fff;
-    margin-right: 20px; /* Abstand nach rechts */
+    margin-right: 40px; /* Abstand nach rechts */
     font-size: 24px;
 }
 
@@ -29,7 +29,7 @@
 .navbar.navbar-custom .navbar-nav .nav-link {
     text-decoration: none; /* entfernt Unterstreichungen */
     color: #fff;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .navbar.navbar-custom .navbar-toggler-icon {
@@ -38,7 +38,7 @@
 
 .navbar.navbar-custom .navbar-brand {
     padding: 0;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .navbar.navbar-custom .navbar-nav .nav-item {
@@ -49,6 +49,7 @@
 .navbar.navbar-custom .navbar-brand img {
     width: 150px; /* Anpassung Breite */
     height: auto; /* Beibehalten Seitenverhältnis, zum Verhindern von Verzerrungen */
+    margin-right: 30px;
 }
 
 .row{
