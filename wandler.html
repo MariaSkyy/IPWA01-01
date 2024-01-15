@@ -30,7 +30,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="beispiel.html">Beispiele</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="wandler.html">Textwandler</a>
                         </li>
                         <li class="nav-item">
@@ -60,11 +60,15 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <textarea id="inputTextFrei" rows="4" cols="50"></textarea>
-                    <button onclick="genderAndDisplay('inputTextFrei','displayTextFrei', true);">Text überprüfen und ändern</button>
+                    <textarea id="inputTextFrei" rows="5" oninput="autoResize(this)"></textarea>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" id="areaTextFrei">
                     <p id="displayTextFrei">Hier wird der Text erscheinen, wenn der Button geklickt wird.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button onclick="genderAndDisplay('inputTextFrei','displayTextFrei', true);">Text überprüfen und ändern</button>
                 </div>
             </div>
         </div>

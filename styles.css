@@ -52,6 +52,11 @@
     margin-right: 30px;
 }
 
+/* Schriftfarbe des aktiven Elements in der globalen Navigation wird auf grün geändert*/
+.navbar.navbar-custom .navbar-nav .nav-item.active a{
+    color: #1e7415;
+}
+
 .row{
     margin-bottom: 20px; /* Abstand nach jeder Row */
 }
@@ -80,13 +85,22 @@ body {
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     resize: none; /* Verhindert das Vergrößern/Verkleinern des Textfelds durch den Benutzer */
+    border: 1px solid  #505861;
+    /*resize: vertical;  Nur vertikales Resize erlauben */
+    height: auto; /* Automatische Höhe basierend auf dem Inhalt */
+    overflow-y: hidden; /* Verhindert das Anzeigen eines vertikalen Scrollbalkens */
+}
+
+#areaTextFrei {
+    border: 1px solid  #505861; /* Dünner Rahmen, solid für durchgezogener Rahmen */
+    /*margin-bottom: 10px;*/
 }
 
 button {
     display: block;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     padding: 10px;
     background-color: #333;
     color: #fff;
