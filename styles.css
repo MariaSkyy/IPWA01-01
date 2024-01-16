@@ -61,12 +61,18 @@
     margin-bottom: 20px; /* Abstand nach jeder Row */
 }
 
+nav ul{
+    list-style: none; /* Entfernen der Listenpunkte bei der lokalen Navigation*/
+}
+
 #localNav.text-right{
     text-align: right;
+    margin-bottom: 30px;
 }
 
 #localNav.text-left{
     text-align: left;
+    margin-bottom: 30px;
 }
 
 /* Globale Stildefinitionen */
@@ -151,6 +157,10 @@ h3 {
 p {
     line-height: 1.6;
     margin-bottom: 5px;
+}
+
+b{
+    margin-top: 30px;
 }
 
 /* Titel-Stile */
