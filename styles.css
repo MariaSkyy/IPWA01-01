@@ -185,8 +185,8 @@ footer {
     width: 100%;
     text-align: center;
     display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren */
-    position: relative;
-    margin-top: auto; /*????? bringt das was?*/
+    /*position: relative;
+    margin-top: auto; ????? bringt das was?*/
 }
 
 /* Stildefinitionen für die Texte */
@@ -231,6 +231,26 @@ footer {
 
     .navbar.navbar-custom .welcome-text {
         display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .legal-info {
+        margin-top: 10px; /* Optional: Füge etwas Abstand zwischen dem Text und den Links hinzu */
+        margin-left: 0; /* Setze den linken Abstand zurück */
+    }
+
+    .legal-info ul {
+        display: flex;
+        flex-direction: column; /* Links untereinander anordnen */
+        align-items: stretch;
+    }
+
+    .legal-info li {
+        margin-bottom: 10px; /* Optional: Füge etwas Abstand zwischen den Links hinzu */
     }
 }
 
