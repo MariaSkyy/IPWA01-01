@@ -96,7 +96,7 @@ function checkCodeInjection(pruefText) {
   if (scriptRegex.test(pruefText) || ausdruckRegex.test(pruefText) || tagRegex.test(pruefText) || functionRegex.test(pruefText) ){
     alert(' In ihrem Text wurde potenziell gefährlicher Code entdeckt! Bitte entfernen Sie die entsprechenden Stellen und versuchen Sie es erneut.');
     document.getElementById('inputTextFrei').value = '';
-    document.getElementById('displayTextFrei').innerText = ''; //innerText statt innerHTML auch gegen injizierten Code
+    document.getElementById('displayTextFrei').innerText = ''; //innerText statt innerHTML gegen injizierten Code
     return true;
   } else return false;
 }
@@ -104,8 +104,9 @@ function checkCodeInjection(pruefText) {
 function setLocalNav() {
   const language = navigator.language || navigator.userLanguage; //gibt bevorzugte Sprache des Nutzers zurück
 
-  // Prüfen Sie, ob die erkannte Schriftkultur von rechts nach links (RTL) ist
-  if (language.toLowerCase().startsWith('ar') || language.toLowerCase().startsWith('he')) { //überprüft, ob die erkannte Schriftkultur mit 'ar' (Arabisch) oder 'he' (Hebräisch) beginnt, und das nicht case sensitive
+  //überprüft, ob die erkannte Schriftkultur mit 'ar' (Arabisch) oder 'he' (Hebräisch) beginnt, und das nicht case sensitive
+  // Somit Überprüfung, ob die erkannte Schriftkultur von rechts nach links (RTL) ist
+  if (language.toLowerCase().startsWith('ar') || language.toLowerCase().startsWith('he')) { 
       document.getElementById("localNav").classList.add("text-right");
   } else {
       document.getElementById("localNav").classList.add("text-left");
@@ -113,7 +114,6 @@ function setLocalNav() {
 }
 
 function loremWiederholung(){
-  console.log("Wdh geladen");
   // Zielfeld
   var contentElement = document.getElementById("loremIpsum");
 
@@ -121,22 +121,17 @@ function loremWiederholung(){
 
   // Schleife zum Einfügen von "Lorem Ipsum"
   for (var i = 0; i < 20; i++) {
-      // Erstelle ein neues Paragraph-Element
-      //var paragraph = document.createElement("p");
       // Füge den Text "Lorem Ipsum" hinzu
-      //paragraph.textContent = "Lorem Ipsum ";
-      // Füge das Paragraph-Element zum Zielfeld hinzu
-      //contentElement.appendChild(paragraph);
       text = text + "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ";
-      //contentElement.innerText="Lorem Ipsum";
   }
-  //contentElement.appendChild(paragraph);
   contentElement.innerText=text;
 }
 
 function autoResize(element) {
-  element.style.height = "auto"; // Zurücksetzen auf automatische Höhe
-  element.style.height = (element.scrollHeight) + "px"; // Anpassen der Höhe basierend auf dem Scrollhöhenwert
+  // Zurücksetzen auf automatische Höhe
+  element.style.height = "auto"; 
+  // Anpassen der Höhe basierend auf dem Scrollhöhenwert
+  element.style.height = (element.scrollHeight) + "px"; 
 }
 
 

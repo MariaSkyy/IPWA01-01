@@ -91,22 +91,18 @@ body {
 textarea {
     width: 100%;
     padding: 10px;
-    /*margin-bottom: 10px;*/
     resize: none; /* Verhindert das Vergrößern/Verkleinern des Textfelds durch den Benutzer */
     border: 1px solid  #505861;
-    /*resize: vertical;  Nur vertikales Resize erlauben */
-    height: auto; /* Automatische Höhe basierend auf dem Inhalt */
+    height: 100%; /* Automatische Höhe basierend auf dem Inhalt */
     overflow-y: hidden; /* Verhindert das Anzeigen eines vertikalen Scrollbalkens */
 }
 
 #areaTextFrei {
     border: 1px solid  #505861; /* Dünner Rahmen, solid für durchgezogener Rahmen */
-    /*margin-bottom: 10px;*/
 }
 
 button {
     display: block;
-    /*margin-top: 10px;*/
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -125,7 +121,6 @@ button:hover {
 header {
     background-color: #333;
     color: #fff;
-    /*padding: 1px 2px;  Anpassung des oberen und unteren Padding */
 }
 
 main {
@@ -185,8 +180,7 @@ footer {
     width: 100%;
     text-align: center;
     display: flex; /* Flexbox verwenden, um die Elemente nebeneinander zu positionieren */
-    /*position: relative;
-    margin-top: auto; ????? bringt das was?*/
+    position: absolute;
 }
 
 /* Stildefinitionen für die Texte */
@@ -222,7 +216,7 @@ footer {
 /* Media Query für Bildschirmbreiten bis 767px */
 @media (max-width: 767px) {    
     body {
-        font-size: 16px; /* Beispielgröße für kleinere Bildschirme */
+        font-size: 16px; 
     }
 
     .navbar.navbar-custom .navbar-brand img {
@@ -239,8 +233,8 @@ footer {
     }
 
     .legal-info {
-        margin-top: 10px; /* Optional: Füge etwas Abstand zwischen dem Text und den Links hinzu */
-        margin-left: 0; /* Setze den linken Abstand zurück */
+        margin-top: 10px; /* Abstand zwischen dem Text und den Links */
+        margin-left: 0; /* Setzt den linken Abstand zurück */
     }
 
     .legal-info ul {
@@ -256,10 +250,8 @@ footer {
 
 /* Media Query für Bildschirmbreiten von 768px bis 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-
+    body {
+        font-size: 18px; 
+    }
 }
 
-/* Media Query für Bildschirmbreiten ab 1024px */
-@media (min-width: 1024px) {
-    /* Hier könnten zusätzliche Anpassungen für größere Bildschirme gemacht werden */
-}
